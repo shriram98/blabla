@@ -357,12 +357,13 @@
           text-align: center;
           width: 100%;
           line-height: 60px;
-          background: white;
+          background: black;
       }
     
       footer li{
           display: inline-block;
           margin-left: 10px;
+         
     
       }
     
@@ -370,8 +371,8 @@
           height: 30px;
           width: 40px;
           font-size: 25px;
-          color: white;
-          background-color: #434343;
+          color: rgb(12, 11, 11);
+          background-color: #e4dede;
           padding-top:8px;
           border-radius: 100%;
       }
