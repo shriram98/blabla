@@ -210,7 +210,7 @@
     
      /* landing page */
     #home{
-        min-height:auto;
+        min-height:100vh;
         background: #34495E;
         background: #062544;
         background: var(--primary-color);
@@ -252,6 +252,7 @@
       line-height: 1.1;
       /*font-weight: 700;*/
       margin: 2rem;
+      right: 200px;
     }
     
     
@@ -261,6 +262,7 @@
       background: #111111;
       background: #15405c;
       background: var(--secondary-color);
+      height: 85vh;
     }
     
     #sponsors{
@@ -371,6 +373,17 @@
           padding-top:8px;
           border-radius: 100%;
       }
+    
+    .landing-style{
+      display: block;
+      margin: 80px auto;
+      left: 300px;
+      position: absolute;
+      top: 50%;
+      margin: 0px;
+      transform: translateY(-50%);
+      height: 60vh;
+    }
     
     .excel-logo{
     height: 50px;
@@ -700,8 +713,6 @@
         margin-right: 15px;
         text-align: center;
         /*font-family: 'Satisfy', cursive;*/
-    
-        color: white;
       }
     
       .heading-font-white {
@@ -752,7 +763,7 @@
     .contact-desc{
       padding:10px;
       font-size:16px;
-      color:white;
+      color:black;
       text-align: center;
     }
     
@@ -763,13 +774,6 @@
       margin-top: 0px;
       color: white;
     }
-      .excel-font-heading {
-        color: white;
-        opacity: 0.8;
-        font-size: 8.5vh;
-        margin-top: 0px;
-        }
-    
     
     
     .excel-logo--ibeto {
@@ -792,28 +796,7 @@
     }
     }
     
-    @media only screen and (min-width: 786px) {
-      .Navbar-Link a{
-        color: inherit;
-     }
-     .excel-content2 {
-      margin-left: 0px;
-    }
-    .landing-content {
-      right: 0%;
-    }
-    }
-    
-    @media screen and (max-width: 992px) and (min-width: 786px) {
-      .logo-excel--small {
-        height: 60px;
-        width: 60px;
-        padding: 10px;
-      }
-      .uline{
-        font-size: 10vw;
-      }
-    }
+
     
     /*spinner css*/
     
@@ -874,11 +857,6 @@
       height: 200px;
     }
     
-    @media screen and ( min-width: 768px ) {
-      .carousel img {
-        height: 400px;
-      }
-    }
     
     /*gap*/
     .carousel {
@@ -947,27 +925,141 @@
     .flickity-page-dots .dot.is-selected {
       background: #7AA641;
     }
+    
+    
+    /* media for mobile*/
     @media only screen and (max-width: 786px) {
+      #excel{
+        height: auto;
+      }
+      .landing-style {
+        display: block;
+        margin: 80px auto;
+        left: auto;
+        position: absolute;
+        top: 25%;
+        margin-left: 10vh;
+        transform: translateY(-50%);
+        height: 45vh;
+      }
+
+      .landing-content {
+        right: auto;
+        position: absolute;
+        top:70%;
+        margin: 10vh;
+      }
+      .associate-grid-container-1 {
+        display: grid;
+        justify-content: space-evenly;
+        grid-gap: 1.5em;
+        /* padding: 1.5em; */
+        margin: 50px 0px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+      }
+      
+      .associate-img {
+        vertical-align: middle;
+        height: 25vh;
+      }
+      
+      .associate-grid-container-2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-evenly;
+        grid-template-columns: auto;
+        grid-gap: 1.5em;
+        padding: 1.5em;
+        /* margin: 50px 0px; */
+      }
+      
+      .associate-text {
+        font-size: 17.5px;
+        margin-left: 15px;
+      }
+
+      .reach-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 0px;
+      }
+      .reach-img {
+        height: 80px;
+      }
       .testimonial-quote {
         font-size: 15px;
         padding: 10px 30px;
       }
+      
       .testimonial {
         margin: 50px auto 65px auto;
         padding: 0 20px;
       }
+  }
+
+  @media only screen and (min-width: 786px) {
+    .Navbar-Link a{
+      color: inherit;
+   }
+   .excel-content2 {
+    margin-left: 0px;
+  }
+  .landing-content {
+    right: 0%;
+  }
+  .carousel img {
+    height: 400px;
+  }
+  }
+
+  @media screen and (max-width:380px){
+    .grid-item {
+      font-size: 30px;
+      text-align: center;
+      border-style: solid;
+      border-width: 0px;
+      background: white;
+      border-radius: 50%;
+      margin:auto;
+      width: 77px;
     }
+    .grid-container {
+      grid-gap:10px 10px;
+    }
+  }
   
+  @media screen and (max-width: 992px) and (min-width: 786px) {
+    .logo-excel--small {
+      height: 60px;
+      width: 60px;
+      padding: 10px;
+    }
+    .uline{
+      font-size: 10vw;
+    }
+  }
   
-    .contact-img-container{
+  /* meadia ends here*/
+  .contact-img-container{
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: middle;.grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        border-style: solid;
+        border-width: 0px;
+        background: white;
+        border-radius: 50%;
+        /* margin: 8px auto; */
+        width: 77px;
+      }
     }
   
   
   .reach-heading{
     color: #1bad89;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 6vh;
+    font-size: 7.5vh;
     margin-bottom: 10px;
   }
