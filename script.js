@@ -19,4 +19,13 @@ $(document).ready(function(){
       offset: '-5%'
   }); 
     
+  var flkty = new Flickity( '.main-gallery', {
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    autoPlay: 1500,
+    prevNextButtons: true
+  });
+  
   });
