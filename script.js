@@ -75,7 +75,7 @@ $(window).scroll(
 
 $(window).resize(function (){
   if($(window).width()>786){
-    $('#navid').toggle();
+    $('#navid').toggle();//toggle hamburger
      $('#navid').show();
   }
 });
@@ -107,8 +107,6 @@ $(window).resize(function (){
 
     return false;
   });
-
-
 
   
 });
